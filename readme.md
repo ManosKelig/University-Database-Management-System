@@ -90,7 +90,7 @@ All columns in the Departments table are required and hence have the NOT NULL co
 
 The relationships between the entities of the database are demostrated in the ER diagram below.
 
-(ER diagram here)
+![image alt](https://github.com/ManosKelig/University-Database-Management-System/blob/main/Entity%20Relationship%20diagram.png?raw=true)
 
 ### readme.md
 
