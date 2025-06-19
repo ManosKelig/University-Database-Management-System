@@ -66,7 +66,7 @@ The database includes the following entities:
 
 The `Students` table includes:
 
-- `StudentID` which specifies the unique `ID` of the student as an `INTEGER`. For this reason the column has the `PRIMARY KEY` constraint applied. No students should have the same `ID`, therefore the `UNIQUE` constraint is also applied.
+- `StudentID` which specifies the unique `ID` of the student as an `INTEGER`. For this reason the column has the `PRIMARY KEY` constraint applied.
 - `Name` which specifies the student's name as `TEXT`. Only first names are used in this database for simplicity.
 - `MajorID` which references the `MajorID` column in the `Majors` table, and thus is specified as a `FOREIGN KEY`.
 - `DepartmentID` which references the `DepartmentID` column in the `Departments` table, and thus is also specified as a `FOREIGN KEY`.
@@ -77,7 +77,7 @@ All columns in the `Students` table are required and hence have the `NOT NULL` c
 
 The `Majors` table includes:
 
-- `MajorID` which specifies the unique `ID` of the major as an `INTEGER`. For this reason the column has the `PRIMARY KEY` constraint applied as well as the `UNIQUE` constraint as no two Majors should have the same `ID`.
+- `MajorID` which specifies the unique `ID` of the major as an `INTEGER`. For this reason the column has the `PRIMARY KEY` constraint applied.
 - `Name` which specifies the title of the major as `TEXT`.
 
 All columns in the `Majors` table are required and hence have the `NOT NULL` constraint applied. 
@@ -86,7 +86,7 @@ All columns in the `Majors` table are required and hence have the `NOT NULL` con
 
 The `Departments` table includes:
 
-- `DepartmentID` which specifies the unique `ID` of the major as an `INTEGER`. For this reason the column has the `PRIMARY KEY` constraint applied as well as the `UNIQUE` constraint as no two Departments should have the same `ID`.
+- `DepartmentID` which specifies the unique `ID` of the major as an `INTEGER`. For this reason the column has the `PRIMARY KEY` constraint applied.
 - `Name` which specifies the name of the `Department` as `TEXT`.
 
 All columns in the `Departments` table are required and hence have the `NOT NULL` constraint applied.

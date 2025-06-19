@@ -12,16 +12,16 @@ def create_table():
     
     # create Majors table 
     cur.execute('''CREATE TABLE IF NOT EXISTS Majors 
-                (MajorID INTEGER PRIMARY KEY NOT NULL UNIQUE,
+                (MajorID INTEGER PRIMARY KEY,
                  Name TEXT NOT NULL UNIQUE)''')
     # create Departments table 
     cur.execute('''CREATE TABLE IF NOT EXISTS Departments 
-                (DeptID INTEGER PRIMARY KEY NOT NULL UNIQUE,
+                (DeptID INTEGER PRIMARY KEY,
                  Name TEXT NOT NULL UNIQUE)''')
     
     # create Students table
     cur.execute('''CREATE TABLE IF NOT EXISTS Students 
-                (StudentID INTEGER PRIMARY KEY NOT NULL UNIQUE, 
+                (StudentID INTEGER PRIMARY KEY, 
                 Name TEXT NOT NULL,
                 MajorID INTEGER NOT NULL, 
                 DeptID INTEGER NOT NULL,
